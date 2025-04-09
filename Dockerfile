@@ -28,8 +28,8 @@ COPY . /app/
 ENV HF_ENDPOINT https://hf-mirror.com
 
 
-RUN pip install --no-cache-dir -e . -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
-RUN pip install torch diart faster-whisper huggingface_hub -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+RUN pip install --no-cache-dir -e . -i https://mirrors.aliyun.com/pypi/simple/
+RUN pip install torch diart faster-whisper huggingface_hub -i https://mirrors.aliyun.com/pypi/simple/
 # 暴露端口
 EXPOSE 8000
 
